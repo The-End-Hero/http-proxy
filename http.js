@@ -23,6 +23,7 @@ app.get('/', function(req, response) {
             // console.log('end')
             const data = JSON.parse(res.text)
             data.code = 500;
+			// 对数据进行修改，方便调试
             response.json(data)
         })
 
